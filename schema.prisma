@@ -1,0 +1,99 @@
+export default function Home() {
+  return (
+    <div className='dashboard'>
+
+      <div className='sidebar'>
+        <div className='logo'>AlphaScanner</div>
+
+        <div className='nav'>
+          <a href='#'>Dashboard</a>
+          <a href='#'>ETFs</a>
+          <a href='#'>Mutual Funds</a>
+          <a href='#'>Analytics</a>
+          <a href='#'>Market Trends</a>
+          <a href='#'>Portfolio</a>
+          <a href='#'>Settings</a>
+        </div>
+      </div>
+
+      <div className='main'>
+
+        <div className='hero'>
+          <h1>Professional ETF Analytics</h1>
+          <p>
+            Advanced ETF and mutual fund analytics dashboard inspired by Bloomberg and TradingView.
+          </p>
+        </div>
+
+        <div className='grid'>
+
+          <div className='card'>
+            <h2>Nifty ETF</h2>
+            <div className='green'>+18.2%</div>
+          </div>
+
+          <div className='card'>
+            <h2>IT ETF</h2>
+            <div className='green'>+22.7%</div>
+          </div>
+
+          <div className='card'>
+            <h2>Gold ETF</h2>
+            <div className='green'>+9.8%</div>
+          </div>
+
+          <div className='card'>
+            <h2>Bank ETF</h2>
+            <div className='green'>+12.4%</div>
+          </div>
+
+        </div>
+
+        <div className='chart'>
+          <h2>Market Trend</h2>
+          <div className='chartbox'></div>
+        </div>
+
+        <div className='table'>
+          <h2 style={{marginBottom:'20px'}}>Top Performing ETFs</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>ETF</th>
+                <th>1Y Return</th>
+                <th>Risk</th>
+                <th>Expense Ratio</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Nifty ETF</td>
+                <td style={{color:'#22c55e'}}>18.2%</td>
+                <td>Moderate</td>
+                <td>0.05%</td>
+              </tr>
+
+              <tr>
+                <td>IT ETF</td>
+                <td style={{color:'#22c55e'}}>22.7%</td>
+                <td>High</td>
+                <td>0.08%</td>
+              </tr>
+
+              <tr>
+                <td>Gold ETF</td>
+                <td style={{color:'#22c55e'}}>9.8%</td>
+                <td>Low</td>
+                <td>0.03%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+  )
+}
